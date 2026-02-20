@@ -26,6 +26,51 @@ public abstract class Consulta {
     public abstract String detalhesConsulta();
 
 
+    public long getCodigo() {
+        return codigo;
+    }
+    public void setCodigo(long codigo) {
+        this.codigo = codigo;
+    }
 
+
+    public String getData() {
+        return data;
+    }
+    public void setData(String data) {
+        this.data = data;
+    }
+
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
+
+
+    public Status getStatus() {
+        return status;
+    }
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+
+    public double getValor() {
+        return valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+
+    public Medico getMedico() {
+        return medico;
+    }
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
 
 }
