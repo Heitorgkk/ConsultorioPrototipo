@@ -18,4 +18,11 @@ public class ConsultaPresencial extends Consulta{
         return "";
     }
 
+    public void setSala(String sala){
+        this.sala = sala;
+    }
+    public String getSala(){
+        return sala;
+    }
+
 }

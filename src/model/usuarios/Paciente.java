@@ -1,11 +1,13 @@
 package model.usuarios;
 
+import model.consultas.Consulta;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Paciente extends Usuario {
 
-    private List<String> historicoConsulta;
+    private List<Consulta> historicoConsulta;
 
     public Paciente(String nome, String cpf, String email, String senha){
 
@@ -14,7 +16,7 @@ public class Paciente extends Usuario {
     }
 
     public Paciente(String nome, String cpf, String email, String senha,
-                    List<String> historico){
+                    List<Consulta> historico){
 
         super(nome, cpf, email, senha);
         this.historicoConsulta = historico;

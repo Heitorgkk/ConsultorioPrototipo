@@ -19,4 +19,11 @@ public class ConsultaEmergencia extends Consulta{
         return "";
     }
 
+    public void setNivelUrgencia(String nivelUrgencia){
+        this.nivelUrgencia = nivelUrgencia;
+    }
+    public String getNivelUrgencia(){
+        return nivelUrgencia;
+    }
+
 }

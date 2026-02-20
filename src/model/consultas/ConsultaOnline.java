@@ -19,4 +19,11 @@ public class ConsultaOnline extends Consulta{
         return "";
     }
 
+    public void setLinkReuniao(String linkReuniao){
+        this.linkReuniao = linkReuniao;
+    }
+    public String getLinkReuniao(){
+        return linkReuniao;
+    }
+
 }
