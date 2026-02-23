@@ -14,10 +14,10 @@ public abstract class Usuario {
         if(!email.contains("@")) throw new EmailInvalidoException("Email deve conter @.");
         if(cpf.length() != 11) throw new CPFInvalidoException("Apenas números.");
 
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-        this.senha = senha;
+        setNome(nome);
+        setCpf(cpf);
+        setEmail(email);
+        setSenha(senha);
     }
 
     public abstract void exibirInfo();
@@ -30,6 +30,7 @@ public abstract class Usuario {
     }
 
     public void setCpf(String cpf){
+        if(cpf.length() != 11) throw new CPFInvalidoException("Precisa ter 11 dígitos.");
         this.cpf = cpf;
     }
     public String getCpf(){
@@ -37,7 +38,7 @@ public abstract class Usuario {
     }
 
     public void setEmail(String email){
-        this.email = email;
+        if(!email.contains("@")) throw new EmailInvalidoException("Formato inválido.");
     }
     public String getEmail(){
         return email;
