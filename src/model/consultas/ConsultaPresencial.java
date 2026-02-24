@@ -15,6 +15,7 @@ public class ConsultaPresencial extends Consulta{
     }
 
     public String detalhesConsulta(){
+        //TODO detalhes consulta presencial
         return "";
     }
 

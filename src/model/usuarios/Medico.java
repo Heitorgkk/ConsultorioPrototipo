@@ -15,9 +15,7 @@ public class Medico extends Usuario {
     }
 
     public void exibirInfo(){
-
-
-
+        //TODO exibir info medico
 
     }
 

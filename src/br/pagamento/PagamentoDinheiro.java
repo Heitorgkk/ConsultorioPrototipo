@@ -1,6 +1,11 @@
-package br.pagamento.pagamentoModel;
+package br.pagamento;
 
-public class PagamentoDinheiro extends PagamentoModel implements Pagamento{
+import br.pagamento.pagamentoModel.Metodo;
+import br.pagamento.pagamentoModel.Pagamento;
+import br.pagamento.pagamentoModel.PagamentoModel;
+import br.pagamento.pagamentoModel.Status;
+
+public class PagamentoDinheiro extends PagamentoModel implements Pagamento {
 
     private double valorRecebido;
     private double troco;

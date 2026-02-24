@@ -16,6 +16,7 @@ public class ConsultaEmergencia extends Consulta{
 
 
     public String detalhesConsulta(){
+        //TODO detalhes consulta emergencia
         return "";
     }
 

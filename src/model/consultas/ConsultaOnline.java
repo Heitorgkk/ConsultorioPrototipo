@@ -16,6 +16,7 @@ public class ConsultaOnline extends Consulta{
 
 
     public String detalhesConsulta(){
+        //TODO detalhes consulta online
         return "";
     }
 

@@ -2,25 +2,32 @@ package model.consultas;
 
 import model.usuarios.Medico;
 import model.usuarios.Paciente;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 public abstract class Consulta {
+
+    private static long cod_increment = 0;
 
     protected long codigo;
     protected Paciente paciente;
     protected Medico medico;
-    protected String data;
+    protected LocalDate data;
+    protected LocalTime hora;
     protected double valor;
     protected Status status;
 
-    public Consulta(long codigo, Paciente paciente, Medico medico, String data,
+    public Consulta(Paciente paciente, Medico medico,
                     double valor, Status status){
 
-        this.codigo = codigo;
-        this.paciente = paciente;
-        this.medico = medico;
-        this.data = data;
-        this.valor = valor;
-        this.status = status;
+        this.codigo = cod_increment++;
+        setPaciente(paciente);
+        setMedico(medico);
+        setData(LocalDate.now());
+        setHora(LocalTime.now());
+        setValor(valor);
+        setStatus(status);
     }
 
     public abstract String detalhesConsulta();
@@ -34,13 +41,19 @@ public abstract class Consulta {
     }
 
 
-    public String getData() {
+    public LocalDate getData() {
         return data;
     }
-    public void setData(String data) {
+    public void setData(LocalDate data) {
         this.data = data;
     }
 
+    public LocalTime getHora(){
+        return hora;
+    }
+    public void setHora(LocalTime hora){
+        this.hora = hora;
+    }
 
     public Paciente getPaciente() {
         return paciente;

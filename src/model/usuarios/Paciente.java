@@ -22,7 +22,9 @@ public class Paciente extends Usuario {
         this.historicoConsulta = historico;
     }
 
-    public void exibirInfo(){}
+    public void exibirInfo(){
+        //TODO exibir info paciente
+    }
 
 
 }

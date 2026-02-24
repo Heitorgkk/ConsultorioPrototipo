@@ -12,6 +12,7 @@ public class Administrador extends Usuario {
     }
 
     public void exibirInfo(){
+        //TODO exibir info adm
 
     }
 
