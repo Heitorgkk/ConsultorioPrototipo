@@ -7,10 +7,10 @@ public class ConsultaEmergencia extends Consulta{
 
     private String nivelUrgencia;
 
-    public ConsultaEmergencia(long codigo, Paciente paciente, Medico medico,
-                              String data, double valor, Status status, String nivelUrgencia){
+    public ConsultaEmergencia(Paciente paciente, Medico medico,
+                              double valor, Status status, String nivelUrgencia){
 
-        super(codigo, paciente, medico, data, valor, status);
+        super(paciente, medico, valor, status);
         this.nivelUrgencia = nivelUrgencia;
     }
 

@@ -7,10 +7,10 @@ public class ConsultaPresencial extends Consulta{
 
     private String sala;
 
-    public ConsultaPresencial(long codigo, Paciente paciente, Medico medico,
-                              String data, double valor, Status status, String sala){
+    public ConsultaPresencial(Paciente paciente, Medico medico,
+                              double valor, Status status, String sala){
 
-        super(codigo, paciente, medico, data, valor, status);
+        super(paciente, medico, valor, status);
         this.sala = sala;
     }
 

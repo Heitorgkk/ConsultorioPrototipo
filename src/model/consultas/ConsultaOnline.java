@@ -7,10 +7,10 @@ public class ConsultaOnline extends Consulta{
 
     private String linkReuniao;
 
-    public ConsultaOnline(long codigo, Paciente paciente, Medico medico,
-                          String data, double valor, Status status, String linkReuniao){
+    public ConsultaOnline(Paciente paciente, Medico medico,
+                          double valor, Status status, String linkReuniao){
 
-        super(codigo, paciente, medico, data, valor, status);
+        super(paciente, medico, valor, status);
         this.linkReuniao = linkReuniao;
     }
 
